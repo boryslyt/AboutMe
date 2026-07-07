@@ -20,6 +20,7 @@ p {
     border-radius: 8px;
     padding: 10px 10px;
     transition: 0.5s;
+    text-decoration: none;
     }   
 .ordinary:hover {
     transform: scale(1.2);
@@ -27,7 +28,7 @@ p {
 .card {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: fit-content;
     border-radius: 12px;
@@ -55,3 +56,40 @@ p {
     min-height: 100vh;
 }
 
+.head-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 24px;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.nav-link:hover {
+    transform: scale(1.1);  
+}
+.nav-logo {   
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.nav-logo:hover {
+    transform: scale(1.1);  
+}
