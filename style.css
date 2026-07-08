@@ -2,6 +2,17 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(1, 8, 17);
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1 {
     color: rgb(255, 255, 255);
@@ -10,8 +21,8 @@ p {
     color : rgba(255, 255, 255, 0.623)
 }
 .ordinary {
-    background-color: rgb(20, 6, 58);
-    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(1, 107, 194, 0.418);
+    color: rgba(255, 255, 255, 0.795);
     border: 1px solid black;
     text-align: center;
     cursor: pointer;
@@ -53,9 +64,10 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;  
-    min-height: 100vh;
 }
-
+header {
+    background-color: rgba(1, 107, 194, 0.418);
+}
 .head-cont {
     display: flex;
     justify-content: space-between;
@@ -75,7 +87,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-.nav-link {
+.nav-link, .nav-logo {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -83,13 +95,13 @@ ul {
 }
 .nav-link:hover {
     transform: scale(1.1);  
-}
-.nav-logo {   
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    transition: transform 0.3s;
+    text-decoration: underline;
 }
 .nav-logo:hover {
     transform: scale(1.1);  
+}
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
