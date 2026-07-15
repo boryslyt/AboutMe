@@ -109,7 +109,7 @@ header {
 
 
 
-.about-body {
+.about-body, .projects-body {
     font-family: Arial, sans-serif;
     background-color: rgb(1, 8, 17);
     margin: 0;
@@ -134,11 +134,11 @@ header {
     padding: 30px;
     border-radius: 18px;
 }
-.skills-h1 {
+.skills-h1, .projects-h1, .language-h1 {
     margin: 0;
     padding: 0;
 }
-.skills-box {
+.skills-box, .language-box {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -150,12 +150,12 @@ header {
     padding: 50px;  
     border-radius: 18px;
 }
-.skills-list {
+.skills-list, .language-list {
     padding-left: 20px;
     gap: 0px;
     color: rgb(255, 255, 255);
 }
-.skills-list li {
+.skills-list li, .language-list li {
     color: rgba(255,255,255,.7);
     margin-bottom: 12px;
 }
@@ -164,4 +164,55 @@ header {
     justify-content: center;
     align-items: flex-start;
     gap: 200px;
+}
+
+
+
+
+
+
+.project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(69, 136, 190, 0.658);
+    padding: 30px;
+    border-radius: 18px;
+    transition: transform .3s;
+}
+.project-box:hover {
+    transform: translateY(-8px);
+}
+.projects-main {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.projects-h1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.664);
+}
+.check-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: transform 0.3s;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+.check-link:hover {
+    transform: scale(1.1);
 }
