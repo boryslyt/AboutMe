@@ -1,3 +1,9 @@
+html{
+scroll-behavior:smooth;
+}
+*{
+box-sizing:border-box;
+}
 .home-body {
     font-family: Arial, sans-serif;
     background-color: rgb(1, 8, 17);
